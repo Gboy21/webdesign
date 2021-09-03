@@ -1,0 +1,151 @@
+body{
+    margin:5%;
+    background-image: url(../web/images/images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.all{
+    text-align: center;
+    margin-left: 35%;
+    margin: 2% 35%;
+    border: 1px inset;
+    background-color: white;
+    border-radius: 3%;
+}
+.all .login{
+    font-weight: 700;
+    font-size: 25px;
+}
+.all .Email p{
+    margin-left: -55%;
+}
+.all .password p{
+    margin-left: -55%;
+}
+.all .forgot {
+    margin-right: -45%;
+    margin-top: 5px;
+}
+.all .btnlogin .button{
+    width: 70%;
+    margin-top: 10%;
+    padding: 3%;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #33ccff 0%, #ff33cc 100%);
+    border: 1px solid #ff33cc;
+}
+.all .Email input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 60%;
+    padding: 5%;
+}
+.all .password input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 60%;
+    padding: 5%;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: red;
+transition-duration: 2s;
+}
+::placeholder{
+    color: gray;
+    font-style: italic;
+}
+.all .or1{
+    margin-top: 13%;
+
+}
+.or2{
+    margin-top: 50px;
+}
+.all .Email:hover{
+    color: green;
+}
+.all .Email input:hover{
+    border: 1px solid green;
+}
+.all .password:hover{
+    color: green;
+}
+.all .password input:hover{
+  border: 1px solid green;
+}
+#form{
+    position: relative;
+}
+#form .Email{
+    position: relative;
+}
+.text{
+    display: block;
+    color: #000;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+}
+#form.invalid .Email:before{
+    content: '';
+    position: absolute;
+    right: 57px;
+    background: url(../web/images/invalid.png);
+    background-size: cover;
+    z-index: 1000;
+    top: 45px;
+    width: 29px;
+    height: 32px;
+}
+#form.valid .Email:before{
+    content: '';
+    position: absolute;
+    right: 57px;
+    top: 50px;
+    width: 28px;
+    height: 28px;
+    background: url(../web/images/valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 375px) {
+    .all{
+    width: 300px;
+    text-align: center;
+    margin-left: -17%;
+    margin: -2% 5%;
+    border: 1px inset;
+    height: 640px;
+    background-color: white;
+    border-radius: 3%;
+    }
+
+}

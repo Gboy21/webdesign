@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <a href="https://icons8.com/icon/OnUNPtDp1jR9/facebook-circled"></a>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form action="login.html" method="POST" id="form">
+    <div class="all">
+      <div class="login"><p>Login</p></div> 
+      <div class="Email"><p>Email</p>
+        <i class="fa fa-user icon"></i>
+        <input type="text" name="" id="text" placeholder="Type Your Email" onkeydown="validation()">
+        <br>
+        <!-- <span id="text">
+
+        </span> -->
+        <br>
+      </div>
+      <div class="password">
+          <p>Password</p>
+          <input type="password" name="" id="password" placeholder="Type Your Password">
+      </div>
+      <div class="forgot">
+         <a href="#">Forgot password?</a> 
+      </div>
+      <div class="btnlogin">
+      <input type="submit" name="" class="button" value="LOGIN">
+      </div>
+      <div class="or1">
+          Or Sign Up Using
+      </div>
+      <div class="awesome">
+          <a href="https://www.facebook.com/Programming-using-HTML-CSS-Javascript-104329165311742" target="_blank">
+            <img src="https://img.icons8.com/fluency/48/000000/facebook-circled.png"/></a>
+            <a href="https://twitter.com/mgboy21" target="_blank"> <img src="https://img.icons8.com/color/48/000000/twitter-circled--v2.png"/></a>
+            <a href="mailto:muhiregilbert27@gmail.com?subject = Feedback&body = Message" target="_blank"><img src="https://img.icons8.com/fluency/50/000000/google-plus.png"/></a> 
+      </div>
+<div class="or2">
+ <p>Or Sign Up Using</p>   
+ <p>SIGN UP</p>
+</div>
+    </div>
+</form>
+
+<script type="text/javascript">
+function validation() {
+    var form = document.getElementById("form");
+    var Email = document.getElementById("text").value;
+    var text = document.getElementById("text");
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (Email.match(pattern)) {
+
+        form.classList.add("valid");    
+        form.classList.remove("invalid");
+        text.innerHTML = "Your Email is valid.";
+        text.style.color = "#00cc00";
+    } 
+    else {
+        form.classList.remove("valid");
+        form.classList.add("invalid");
+        text.innerHTML = "Your Email is invalid.";
+        text.style.color = "#ff0000";
+    }
+
+    
+}
+</script>
+
+</body>
+</html>
+
+
